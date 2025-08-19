@@ -3,37 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Student Grade Calculator</title>
   </head>
   <body>
     <main class="container">
-      <div class="form-container">
-        <form action="">
-          <label for="studentName">Name: </label>
-          <input
-            type="text"
-            id="studentName"
-            placeholder="Enter your full name"
-            required
-          />
-          <br />
-          <label for="subject1">Enter 1st mark: </label>
-          <input type="text" id="subject1" placeholder="Mark of 1st Subject" />
-          <br />
-          <label for="subject2">Enter 2nd mark: </label>
-          <input type="text" id="subject2" placeholder="Mark of 2nd Subject" />
-          <br />
-          <label for="subject3">Enter 3rd mark: </label>
-          <input type="text" id="subject3" placeholder="Mark of 3rd Subject" />
-          <br />
-          <button type="submit">Calculate Grade</button>
-        </form>
-        <div class="result-container">
-          <h2>Grade Result</h2>
-          <p id="result"></p>
-        </div>
+      <form action="">
+        <label for="studentName">Name: </label>
+        <input
+          type="text"
+          id="studentName"
+          placeholder="Enter your full name"
+          required
+        />
+        <br />
+        <label for="subject1">Enter 1st mark: </label>
+        <input type="text" id="subject1" placeholder="Mark of 1st Subject" />
+        <br />
+        <label for="subject2">Enter 2nd mark: </label>
+        <input type="text" id="subject2" placeholder="Mark of 2nd Subject" />
+        <br />
+        <label for="subject3">Enter 3rd mark: </label>
+        <input type="text" id="subject3" placeholder="Mark of 3rd Subject" />
+        <br />
+        <button type="submit">Calculate Grade</button>
+      </form>
+      <div class="result-container">
+        <p id="result"></p>
       </div>
     </main>
   </body>
