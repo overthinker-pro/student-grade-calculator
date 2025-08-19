@@ -5,3 +5,87 @@
     font-family: "Arimo", sans-serif;
 }
 
+:root {
+  --bg-color: #e0e5ec;
+  --primary-text-color: #555;
+  --light-shadow: rgba(255, 255, 255, 0.5);
+  --dark-shadow: rgba(163, 177, 198, 0.6);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
+}
+
+.container {
+  padding: 40px;
+  border-radius: 20px;
+  background: var(--bg-color);
+  box-shadow: 9px 9px 16px var(--dark-shadow),
+    -9px -9px 16px var(--light-shadow);
+  max-width: 450px;
+  width: 90%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  background: var(--bg-color);
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  box-shadow: inset 5px 5px 10px var(--dark-shadow),
+    inset -5px -5px 10px var(--light-shadow);
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 7px 7px 12px var(--dark-shadow),
+    inset -7px -7px 12px var(--light-shadow);
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  background: var(--bg-color);
+  color: var(--primary-text-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px var(--dark-shadow), -5px -5px 10px var(--light-shadow);
+  transition: all 0.2s ease-in-out;
+}
+
+button[type="submit"]:active {
+  box-shadow: inset 5px 5px 10px var(--dark-shadow),
+    inset -5px -5px 10px var(--light-shadow);
+}
+
+.result-container {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  min-height: 1.5em;
+}
