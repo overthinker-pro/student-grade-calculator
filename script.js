@@ -40,6 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
       grade = "B";
     } else if (average >= 40) {
       grade = "C";
+    } else if (average >= 30) {
+      grade = "D";
+    } else if (average >= 20) {
+      grade = "E";
     } else {
       grade = "Fail";
     }
